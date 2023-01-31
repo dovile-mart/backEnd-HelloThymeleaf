@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Hello Model</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<div>
+		<div th:if="${ika} &gt; 17">
+			<p th:text="'Welcome ' + ${nimi} + '!'"/> 			<!-- http://localhost:8080/hello?name=John&age=20 -->
+		</div>
+		<div th:if="${ika} &lt; 18">You are too young!</div> <!-- http://localhost:8080/hello?name=Mark&age=12 -->
+	</div>
+</body>
+
+</html>
